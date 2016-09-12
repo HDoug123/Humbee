@@ -12,98 +12,77 @@ font-family: 'Montserrat', sans-serif;*/
   border: 1px solid red !important;
 }*/
 
-//*Copied straight from edmodo*//
+/*Junk*/
+  /*Copied straight from edmodo
+  #facebox {
+      position: absolute;
+      z-index: 104;
+      text-align: left;
+      box-shadow: 0 1px 5px rgba(51,57,60,.45);
+      background-color: #fff;
+  }
 
-/*#facebox {
-    position: absolute;
-    z-index: 104;
-    text-align: left;
-    box-shadow: 0 1px 5px rgba(51,57,60,.45);
-    background-color: #fff;
-}
+  .border2 {border-radius: 2px;}
 
-.border2 {border-radius: 2px;}
-
-#facebox .body>div.content {
-    min-width: 300px;
-    border-radius: 0 0 2px 2px;
-}*/
+  #facebox .body>div.content {
+      min-width: 300px;
+      border-radius: 0 0 2px 2px;
+  }*/
 
 *{box-sizing: border-box;}
 
 a{text-decoration: none;}
 
-div {
-  font-size: 13px;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+html, body, div, p, form, fieldset, legend,
+label, button, input, select, textarea,
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  font-family:'lato', sans-serif;
   color: #383d48;
   margin: 0;
-  padding: 0;
-  line-height: 20px;
-  display: block;
-}
+  padding: 0;}
 
 li,ol,ul {
   list-style: none;
   list-style-image: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
 
 #class_invite_main_container {
   width: 784px;
   overflow: hidden;
-  background: #eef2f6;
-  color: #fff;
-}
+  background-color: #effbf7;
+  /*Light gray blue background: #eef2f6; light gray: 25ae90 good with greener*/
+  color: #FFFFFF;}
 
 .class_invite_header {
-  background-color: #276bb0;
-}
+  background-color: #18A393;}
+  /*BlueBlue:background-color: #276bb0; teal: #18A393; greener #25ae90;*/
 
 #class_invite_main_container .class_invite_header h1 {
-  font-family: 'HelveticaNeue-Thin', Arial, sans-serif;
+  font-weight: 300;
   padding: 4%;
   text-align: center;
   font-size: 18pt;
-  color: #FFFFFF;
-  font-weight: normal;
-}
+  color: #FFFFFF;}
 
 #class_invite_main_container .left_column {
-  max-width: 23%;
+  width: 35%;
   display: block !important;
   text-align: left;
-  float:left;
-}
+  float:left;}
 
 #class_invite_main_container .right_column {
-  width: 77%;
+  width: 65%;
   background: #FFFFFF;
   min-height: 450px;
-  position: relative;
-  float:left;
-}
+  position:relative;
+  float:left;}
 
-/*.pull_left {float: left;}*/
-/*OLD: #class_invite_main_container .left_column {
-  width: 23%;
-  display: block !important;
-  text-align: left;
-}
-
-#class_invite_main_container .right_column {
-  width: 77%;
-  background: #FFF;
-  min-height: 450px;
-  position: relative;
-}*/
 
 #class_invite_main_container .sidebar_main_container ul.invite_options_list {
   margin-top: 33%;}
 
-
-/*Why do we specify the classes if there is only one ul on the page?*/
 
 #class_invite_main_container .sidebar_main_container ul.invite_options_list li {
   cursor: pointer;
@@ -111,29 +90,21 @@ li,ol,ul {
   font-size: 10pt;
   letter-spacing: 0.1px;
   list-style: none;
-  line-height: 25px;
-}
+  line-height: 25px;}
 
 #class_invite_main_container .sidebar_main_container ul.invite_options_list li a {
-  color: #5b6069;
-  font-family: 'HelveticaNeue-Thin', Arial, sans-serif;
+  color: #000000; /*color: #5b6069;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   margin-left: 5%;
-  text-decoration: none;
-}
+  text-decoration: none;}
+
 
 span, svg {
-  vertical-align: bottom;
-  padding-right:3px;
-}
+  vertical-align: middle;
+  padding-right:3px;}
 
-
-/*#group-invitations-main-container .sidebar-main-container ul.invite-options-list li a .icon_invite_menu {
-  width: 25px;
-  height: 25px;
-  display: block;
-  float: left;
-}*/
-
+span{padding-left: 5px}
 
 #class_invite_main_container .sidebar_main_container ul.invite_options_list li.active {
   background: #FFFFFF; }

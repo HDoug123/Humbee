@@ -1,0 +1,99 @@
+*{box-sizing: border-box;}
+
+a{text-decoration: none;}
+
+html, body, div, p, form, fieldset, legend,
+label, button, input, select, textarea,
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  font-family:'lato', sans-serif;
+  color: #383d48;
+  margin: 0;
+  padding: 0;}
+
+.shell{
+
+    background-color: #DC143C;/*reddish pink*/
+    overflow-y:auto;
+	
+	width: 90%;
+	height: 100%;
+	margin-bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	top:76.8px;
+	position:relative;}
+
+    /*padding-left: 20%;background page will be z-index 1, this will need to switch z-index 2*/
+
+	.group_creater_container{
+	    position: relative;
+	    width:90%;
+	    height:100%;
+	    padding: 15px;
+	    overflow: hidden;
+	    background-color: orange;
+	    line-height: 1.5;}
+
+		.group_picker_container{
+			padding:15px;
+			background-color:purple;
+		}
+
+			.group_picker{
+				width:90%;
+			}
+
+				.group_picker_btn{
+				display:inline-block;
+				width:20%;
+				margin: 5px;
+				}
+
+/*	.tabs
+	.group_picker_container
+		.group_picker
+			.group_picker_btn*/
+
+
+
+
+/*
+
+
+.content {
+    position: relative;
+    background-color: #fff;
+    font-family: "Source Sans Pro",source-sans-pro,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    color: #303233;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+}
+
+.group_creater_container{
+    position: relative;
+    padding: 10px calc(1.5 * 10px) 0;
+    overflow: hidden;
+    line-height: 1.5;}
+
+-------TABS FROM POLL SITE
+            .magic_bar .tabs .tab.tab--selected {
+                color: #255073;
+                font-weight: bold;
+                background-color: #fff;
+                box-shadow: none;}
+
+            .magic_bar .tabs .tab:hover {
+                cursor: pointer;}
+
+            .magic_bar .tabs .tab:first-child {
+                box-shadow: inset -2px -4px 6px -3px rgba(0,0,0,0.5);}
+
+            .magic_bar .tabs .tab {
+                padding: 1.5em;
+                float: left;
+                width: 10em;
+                text-align: center;
+                background-color: #ededed;
+                box-shadow: inset 2px -4px 6px -3px rgba(0,0,0,0.5);}*/
