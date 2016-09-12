@@ -11,9 +11,144 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;}
 
-.shell{
+body {
+  background: #f06d06;
+  font-size: 80%;}
+input{
+	background-color:#F8F9FA;}
+	/*#DFEAF3*/
 
-    background-color: #DC143C;/*reddish pink*/
+.span_600{
+	width:600px;
+margin-left: 200px;}
+
+
+.flex_center {
+	display: flex;
+  	justify-content: center;}
+
+.groupCreater_container{
+	color: red;
+	margin: 20px 20px 0 20px;
+  	border: 2px solid #000000;
+      box-shadow: 0 3px 9px rgba(0,0,0,0.5);}
+
+.groupCreater_navbar_container {
+	background: white;
+  	/*padding: 10px 10px 0 10px;*/
+  	width: 100%;}
+
+
+.groupCreater_option_btn {
+ 	background: #DCDCDC;
+  	color: #000;
+  	padding: 30px 30px 20px 30px;
+  	width:25%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align:center;
+  	font-size:13px;
+  	font-family:'lato', sans-serif;
+  	font-weight: 300;}
+
+.selected_btn{
+	background-color: white;
+}
+.groupCreater_input_display{
+	background: white;
+	padding: 30px 40px 20px 40px;
+  	width:100%;}
+
+
+/*------- Input Text Boxes---------*/
+.group { 
+	width:inherit;
+	position:relative;
+	margin-bottom: 23px;}
+
+.inputMaterial        {
+  font-size:14px;
+  padding:8px;
+  display:block;
+  border:1px solid #A8ABAC;
+}
+
+label{
+  color:#999;
+  font-weight: 200px; 
+  font-size:12px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;}
+
+
+inputMaterial::selection {outline:none;} 
+/*.inputMaterial:focus    { border: 1px solid black;} need to figure htis out it is applying ::selection rule below instead*/
+
+
+/* active state */
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label    {
+  top:-18px;
+  font-size:12px;
+  color: #555555;
+  font-weight: 400px; }
+
+
+
+
+/*----Name of Group & Group Sizing Inpus SAME style for all tabs----*/
+
+#groupingName{
+	width:100%;
+}
+
+
+
+#groupSize{
+	width:45%;
+}
+
+
+.groupSize_Options p {
+	width: 40%;}
+
+
+a {
+	font-weight: 400px;
+	font-color:#3784D3;
+
+}
+
+.groupSize_options{
+	display: inline;
+}
+
+.generateGroups_btn {
+	width:100%;
+    border: 1px solid #FFCE0C;
+    border-radius: 3px;
+    background-color: #FFCE0C;
+    color: #000000;
+    width: 100%;
+    padding: 10px 8px 10px 8px;
+    font-weight: 600;
+}
+
+
+/*----TAB: Randon---*/
+
+
+
+/*------JUNK-------*/
+/*.shell{
+
+    background-color: #DC143C;
     overflow-y:auto;
 	
 	width: 90%;
@@ -23,11 +158,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: auto;
 	padding: 0;
 	top:76.8px;
-	position:relative;}
+	position:relative;}*/
 
     /*padding-left: 20%;background page will be z-index 1, this will need to switch z-index 2*/
 
-	.group_creater_container{
+	/*.group_creater_container{
 	    position: relative;
 	    width:90%;
 	    height:100%;
@@ -38,18 +173,17 @@ h1, h2, h3, h4, h5, h6 {
 
 		.group_picker_container{
 			padding:15px;
-			background-color:purple;
-		}
+			background-color:purple;}
 
-			.group_picker{
-				width:90%;
-			}
+			.group_creater_navbar_container{
+				padding: 10px;}
 
-				.group_picker_btn{
+			.group_picker_btn{
 				display:inline-block;
 				width:20%;
-				margin: 5px;
-				}
+				margin: 5px;}
+
+			li.group_picker_btn div{text-align: middle; vertical-align: middle;}*/
 
 /*	.tabs
 	.group_picker_container
