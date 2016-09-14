@@ -11,21 +11,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;}
 
-  li {
-    display: block;
-    float: left;
-}
-
 body {
-  background: #f06d06;
+  background: #5B7281;
   font-size: 80%;}
+
 input{
 	background-color:#F8F9FA;}
 	/*#DFEAF3*/
 
 .span_600{
 	width:600px;
-margin-left: 200px;}
+	margin-left: 200px;}
 
 
 .flex_center {
@@ -45,11 +41,11 @@ margin-left: 200px;}
 
 
 .groupCreater_option_btn {
- 	background: #DCDCDC;
+ 	  background: #DFEAF3; /*gray background #DCDCDC*/
   	color: #000;
   	padding: 30px 30px 20px 30px;
   	width:25%;
-	display: flex;
+	 display: flex;
   	justify-content: center;
   	align-items: center;
   	text-align:center;
@@ -59,7 +55,9 @@ margin-left: 200px;}
 
 .selected_btn{
 	background-color: white;
+	font-weight: 500px;
 }
+
 .groupCreater_input_display{
 	background: white;
 	padding: 30px 40px 20px 40px;
@@ -74,26 +72,27 @@ margin-left: 200px;}
 
 .inputMaterial        {
   font-size:14px;
-  padding:8px;
+  padding:10px;
   display:block;
   border:1px solid #A8ABAC;
+  border-radius: 1px;
+  width:100%;
 }
 
 label{
-  color:#999;
+  color:#333333;
   font-weight: 200px; 
-  font-size:12px;
+  font-size:13px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
-  left:5px;
+  left:10px;
   top:10px;
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;}
 
 
-inputMaterial::selection {outline:none;} 
 /*.inputMaterial:focus    { border: 1px solid black;} need to figure htis out it is applying ::selection rule below instead*/
 
 
@@ -109,15 +108,8 @@ inputMaterial::selection {outline:none;}
 
 /*----Name of Group & Group Sizing Inpus SAME style for all tabs----*/
 
-#groupingName{
-	width:100%;
-}
-
-
-
-#groupSize{
-	width:45%;
-}
+#maxGroupNumber,#groupSize{
+	width:45%;}
 
 
 .groupSize_Options p {
@@ -126,13 +118,10 @@ inputMaterial::selection {outline:none;}
 
 a {
 	font-weight: 400px;
-	font-color:#3784D3;
-
-}
+	font-color:#3784D3;}
 
 .groupSize_options{
-	display: inline;
-}
+	display: inline;}
 
 .generateGroups_btn {
 	width:100%;
@@ -142,12 +131,55 @@ a {
     color: #000000;
     width: 100%;
     padding: 10px 8px 10px 8px;
-    font-weight: 600;
-}
+    font-weight: 600;}
 
 
 /*----TAB: Randon---*/
 
+.advSettingTitle{
+	margin: 8px;}
+
+input[type="checkbox"]{
+margin: 8px 8px 8px 30px;}
+
+
+/*------TAB: Topic------*/
+
+#topicPrompt{
+	margin-bottom:0px;
+}
+.topicPromptOptions_Container{
+	display:flex;
+	flex-direction:column;
+	margin:2px 0 30px 0;
+	padding:10px 15px 15px 15px;
+	background-color: #f8f9fa;
+}
+
+.topicOption{
+	margin-bottom: 15px;
+	padding:6px;
+	font-size: 13px;
+	background-color: #FFFFFF;
+  	border:1px solid #A8ABAC;
+  	color:#333333;
+}
+
+input[placeholder="Topic #1"]{
+	order: 1;}
+
+input[placeholder="Topic #2"]{
+	order: 2;}
+
+button.addTopic {
+	margin-left: 70%;
+	border: 2px solid #5B7281;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    color: #3784D3;
+    padding: 10px 8px 10px 8px;
+    font-weight: 400;
+	order:3;}
 
 
 /*------JUNK-------*/
