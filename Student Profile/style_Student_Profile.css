@@ -1,0 +1,108 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-size:14px; 
+    line-height:20px;
+    font-weight:200;
+    background: #FFFFFF;
+    color: #555;}
+
+.page_wrapper{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#CDCDCF;
+	width: 100%;
+	margin:0;
+	padding:0;}
+
+.form_container{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	width: 100%;
+	margin:10px;
+    border-radius: 5px;
+    background-color: #DFEAF3;} /*old blue  DFEDEF*/
+
+div.form_header{
+	width:100%;
+	background-color:#3f79a8;/*aqua#386970*/
+	color:white;
+	vertical-align: middle;}
+
+
+h1{
+	vertical-align: middle;
+	text-align: center;
+	font-size:18px;
+	font-weight: 300;}
+
+.form_element{
+	display:flex;
+	flex-flow:row wrap;/*flex-direction:row; flex-wrap:wrap;*/
+	justify-content:flex-start;
+	align-items:center;
+	width:100%;
+	text-align: left;
+	padding:10px 10px 10px 20px;
+	font-weight:300;
+	color:#555;}
+
+
+label {
+	padding: 0 2px 0 10px;
+	flex-basis:70px;}
+
+.prefLabel {
+	flex-basis:82px;}
+
+input.rosterInput {
+	background-color: white;
+	padding:5px;
+	margin-right: 15px;
+	flex-grow: 2;}
+
+
+/*------Buttons--------*/
+.profile_buttons{
+	display:flex;
+	flex-flow:row wrap;/*flex-direction:row; flex-wrap:wrap;*/
+	justify-content:center;
+	align-items:center;
+	align-content: center;
+	width:100%;
+	padding:10px 10px 10px 20px;
+	font-weight:300;
+	color:#555;}
+
+.secondary_action_button {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background:#DFEAF3;
+    color:#3f79a8;
+    margin-right:14px;
+    min-width:117px;
+    padding:8px;}
+
+
+.action_button {
+    border: 1px solid #FFCE0C;
+    border-radius: 3px;
+    background-color:#FFCE0C;
+    color:#000000;
+    min-width:117px;    margin: 0.2em 0;
+    width: 220px;
+    padding:8px;
+    font-weight:600;}
+
+
+select {
+	border: 1px solid #55606f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #55606f;
+    font-size: 13px;
+    height: 27px;
+    margin: 0.2em 0;
+    width: 220px;
+    vertical-align: middle;}

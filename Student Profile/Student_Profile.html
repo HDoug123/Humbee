@@ -1,0 +1,84 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style_Student_Profile.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+</head>
+
+<body>
+	<div class="page_wrapper">
+		<div class="form_container">
+			<div class="form_header">
+				<h1>Student Info</h1>
+			</div>
+			<div class="form_element">
+				<label>First Name</label>
+				<input class="rosterInput" id="student_Fname" type="text" required="">
+			</div>
+			<div class="form_element">
+				<label>Last Name</label>
+				<input class="rosterInput" id="student_Lname" type="text" required="">
+			</div>
+			<div class="form_element">
+				<label>Student ID</label>
+				<input class="rosterInput" id="student_ID" type="text" required="">
+			</div>
+  			<div class="form_element">
+				<label id="Labelgender">Gender</label>
+					<select id="genderBox" name="gender" required="required">
+						<option value="">Select Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="otherGender">Other</option>
+					</select>
+			</div>
+			<div class="form_header">
+				<h1>Grouping Preferences 
+					<svg fill="#E7CD16"  viewBox="0 0 24 24" height="18" width="18">
+    					<path d="M0 0h24v24H0z" fill="none"/>
+    					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z "/>
+					</svg>
+					<!--<svg fill="#CD4B5B" height="18" viewBox="0 0 24 24" width="18">
+				    <path d="M0 0h24v24H0z" fill="none"/>
+				    <path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"/></svg>-->
+				</h1>
+			</div>
+			<div class="form_element">
+				<label class="prefLabel">Don't Group</label>
+				<input class="rosterInput" id="neverGroup" type="text" required="">
+			</div>
+			<div class="form_element">
+				<label class="prefLabel">Never Group</label>
+				<input class="rosterInput" id="alwaysGroup" type="text" required="">
+			</div>
+			<div class="form_element">
+				<label class="prefLabel">Ability Level</label>
+				<select id="abilityBox" name="gender" required="required">
+					<option value="">Select Ability</option>
+					<option value="low">Low</option>
+					<option value="proficient">Proficient</option>
+					<option value="otherGender">High</option>	
+				</select>
+			</div>
+
+			<div class="profile_buttons">
+				<button id="cancel_button" class="secondary_action_button">Cancel</button>
+				<button id="save_button" class="action_button">Save</button>
+			</div>
+		</div>
+
+	</div>
+				<!--<div class="form_element">
+			<p class"radioBtn_prompt">Gender</p>
+				<input class="rosterRadioBtn" id="gender" type="radio" name="gender" value="male" required=""> Male
+				<input class="rosterRadioBtn" id="gender" type="radio" name="gender" value="male" required=""> Female
+				<input class="rosterRadioBtn" id="gender" type="radio" name="gender" value="other" required=""> Other
+			</div>-->
+
+</body>
+</html>
+
+
+

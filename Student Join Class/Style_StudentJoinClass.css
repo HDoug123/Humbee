@@ -1,0 +1,111 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+/*ORANGE: FF9D0C;
+AQUA:4CE3FF;
+TEAL:1ECCB8;
+BROWN:998844;*/
+
+/** {border: 1px solid red !important;}*/
+
+* {box-sizing: border-box;}
+
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size:14px; 
+    line-height:20px;
+    font-weight:200;
+    background: #dff3f2;
+    /*Favorite: brighter blue:#C9F7FF 
+        Blue/gray matches teacher loging: DFEAF3
+        A bright blue, that I like less B0F7FF*/
+    color: #555;}
+
+html, body{
+    width:100%;
+    height:100%;}
+
+body, div {
+    display:block;}
+
+input {width:100%; background:#FFF; margin-bottom: 20px; line-height: 50px; font-size: 20px;}
+
+
+img:not(:root) {
+    overflow: hidden;} /*image will not be cropped?*/
+
+#pg_container {
+    padding: 0 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;}
+
+#main_content{
+    min-height: 100%;
+    text-align: center;
+    margin:0 25px;}
+
+#centered_content{
+    max-width: 660px;}
+
+#form_logo{
+    margin: 25px;
+    padding-top: 25%;} 
+
+
+.form_container {
+    border-radius: 5px;
+    /*background-color: #FFCE0C; ORIGINIAL YELLOW*/
+    text-align: left;}
+
+input.single_input{
+    font-weight: bold; text-align: center; vertical-align: middle; border-color: #FFF;}
+
+.button_container{text-align: center;}
+
+#login_button{
+    display: inline-block;
+    margin: 0px 0px 8px 0px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color:#000;
+    color:#FFFFFF;
+    width:100%;
+    padding:10px;
+    font-weight:600;}
+
+
+/*---Bottom Links---*/
+
+.vertical_align_middle {vertical-align: middle; display: inline-block; text-align:center; font-size: 1rem;}
+
+.vertical-align-bottom {vertical-align: bottom;}
+
+.vertical-align-bottom, .vertical-align-middle {
+    text-align: center;
+    display: inline-block;} /*IN SOCRATIVE: max-width: 100%; font-size: 1rem*/
+
+
+
+
+::selection {
+    background: #39f;
+    color: #fff;
+    text-shadow: none;} /*when you highlight the text it turns white with a blue background*/
+
+
+

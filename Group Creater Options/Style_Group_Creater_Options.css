@@ -26,13 +26,13 @@ input{
 
 .flex_center {
 	display: flex;
-  	justify-content: center;}
+  justify-content: center;}
 
 .groupCreater_container{
 	color: red;
 	margin: 20px 20px 0 20px;
-  	border: 2px solid #000000;
-      box-shadow: 0 3px 9px rgba(0,0,0,0.5);}
+  /*border: 2px solid #000000; BLACK BORDER*/
+  box-shadow: 0 3px 9px rgba(0,0,0,0.5);}
 
 .groupCreater_navbar_container {
 	background: white;
@@ -41,19 +41,23 @@ input{
 
 
 .groupCreater_option_btn {
- 	  background: #DFEAF3; /*gray background #DCDCDC*/
-  	color: #000;
-  	padding: 30px 30px 20px 30px;
-  	width:25%;
-	 display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	text-align:center;
-  	font-size:13px;
-  	font-family:'lato', sans-serif;
-  	font-weight: 300;}
+  background: #DFEAF3; /*gray background #DCDCDC*/
+	color: #000; /*#555555 gray color*/
+	padding: 30px 30px 20px 30px;
+	width:25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  font-size:13px;
+  font-family:'lato', sans-serif;
+  font-weight: 300;}
 
-.selected_btn{
+.groupCreater_option_btn:hover{
+  cursor: pointer;
+} 
+
+.active{
 	background-color: white;
 	font-weight: 500px;
 }
