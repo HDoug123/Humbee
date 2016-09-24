@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}main{% endblock %}
+
+{% block description %}main page{% endblock %}
+
+{% block content %}
+{% if groups %}
+	<b>Groups:</b>
+	<ol>
+	{% for group in groups %}
+		<li><ul>
+		{% for user in group %}
+			<li>{{ user }}</li>
+		{% endfor %}
+		</ul></li>
+	{% endfor %}
+	</ol>
+	<br/>
+	<pre>{{ output }}</pre>
+{% else %}
+<form action="{{ path }}" method="post">
+	{% csrf_token %}
+	{{ form }}
+	<br />
+	<input type="submit" value="Submit" />
+</form>
+{% endif %}
+{% endblock %}
+
+{% block finaljs %}
+{% endblock %}
+

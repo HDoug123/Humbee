@@ -1,0 +1,52 @@
+{% load static %}{% load compress %}{% spaceless %}
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% block title %}{% endblock %} :: humbee</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{{STATIC_URL}}/favicon.ico"/>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'libs/bootstrap-3.3.5/css/bootstrap.min.css' %}">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'libs/bootstrap-3.3.5/css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.3.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/tablesorter/themes/blue/style.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/tablesorter/addons/pager/jquery.tablesorter.pager.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endcompress %}
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="{{ STATIC_URL }}libs/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body>
+{% block content %}{% endblock %}
+<footer>
+    <p>&copy; humbee 2016</p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ STATIC_URL }}libs/jquery/2.1.0/jquery-2.1.0.min.js"><\/script>')</script>
+
+{% compress js %}
+<script src="{% static 'libs/bootstrap-3.3.5/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'libs/tablesorter/jquery.metadata.js' %}"></script>
+<script src="{% static 'libs/tablesorter/jquery.tablesorter.min.js' %}"></script>
+<script src="{% static 'libs/tablesorter/addons/pager/jquery.tablesorter.pager.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endcompress %}
+
+{% block finaljs %}{% endblock %}
+</body>
+</html>
+{% endspaceless %}
