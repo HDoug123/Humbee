@@ -1,0 +1,9 @@
+table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+table td {
+	width: 250px;
+	vertical-align: text-top;
+}

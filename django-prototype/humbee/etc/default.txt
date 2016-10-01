@@ -1,0 +1,31 @@
+# NumPeople NumForbidden NumTogether NumPaired
+9 3 0 10
+# Sizes of the parts of the partition
+3 3 3
+# Names
+ANTONIO
+BERTA
+VICKY
+QUEENIE
+DANIELLE
+YING
+SHARYL
+JUSTINE
+GENARO
+# Forbidden pairs
+BERTA, VICKY
+VICKY, DANIELLE
+VICKY, GENARO
+# Must be together
+# Already paired
+VICKY, QUEENIE
+VICKY, YING
+VICKY, YING
+VICKY, SHARYL
+VICKY, JUSTINE
+VICKY, JUSTINE
+QUEENIE, YING
+YING, JUSTINE
+YING, JUSTINE
+JUSTINE, GENARO
+
