@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="Style_Group_Creater_Options.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   
@@ -26,9 +27,11 @@
 
 <body>
 
-<div class="groupCreater_container span_600">
+<div class="groupCreater_container span_600" id="tabbed_navbar">
 
 	<div data-tab-ID="1" class="groupCreater_navbar_container flex_center">
+		<ul>
+		<li><a href="#by_random">
 		  	<div class="groupCreater_option_btn active">
 		        <div class="groupCreaterOption_icon_container">
 					<svg viewBox="0 0 256 256" width="45" height="45">
@@ -48,7 +51,9 @@
 					<div class="groupCreaterOption_title">Random</div>
 				</div>
 			</div>
+		</a></li>
 
+		<li><a href="#by_advanced">
 		  	<div class="groupCreater_option_btn">
 		        <div class="groupCreaterOption_icon_container">
 					<svg viewBox="0 0 256 256" width="45" height="45">
@@ -80,7 +85,9 @@
 					<div class="groupCreaterOption_title">Advanced</div>
 				</div>
 		  	</div>
+		</a></li>
 
+		<li><a href="#by_similar_topic">
 			<div class="groupCreater_option_btn">
 		        <div class="groupCreaterOption_icon_container">
 					<svg viewBox="0 0 256 256" width="45" height="45" >
@@ -101,8 +108,10 @@
 					</svg>
 				<div class="groupCreaterOption_title">Similar Topic</div>
 				</div>
-		  	</div>
+			</div>
+		</a></li>
 
+		<li><a href="#by_students_pick">
 		  	<div class="groupCreater_option_btn">
 		        <div class="groupCreaterOption_icon_container">
 					<svg viewBox="0 0 256 256" width="45" height="45">
@@ -119,9 +128,11 @@
 					<div class="groupCreaterOption_title">Students Pick</div>
 				</div>
 		  	</div>
+			</a></li>
+			</ul>
 	</div>
 	
-<!--<div class="groupCreater_input_display">
+	<div class="groupCreater_input_display" id="by_random">
 		<div class="form_inputs_container formInputsContainer_Random">
 			<form action="" method="post">
 				<div class="group">      
@@ -136,9 +147,9 @@
 			</form>
 					<div> <button class="generateGroups_btn">Generate Groups</button></div>
 		</div>
-	</div>-->
+	</div>
 
-<!--<div class="groupCreater_input_display">
+	<div class="groupCreater_input_display" id="by_advanced">
     <div class="form_inputs_container formInputsContainer_Advanced">
       <form action="" method="post">
         <div class="group">
@@ -164,12 +175,12 @@
       </form>
       <div>
         <button class="generateGroups_btn">Generate Groups</button>
-      </div>-->
+      </div>
+      </div></div>
 
-<!--<div class="groupCreater_input_display">
+	<div class="groupCreater_input_display" id="by_similar_topic">
     <div class="form_inputs_container formInputsContainer_Topic">
       <form action="" method="post">
-
         <div class="group" id="topicPrompt">
           <input class="inputMaterial" type="text" required>
           <label>Topic Prompt</label>
@@ -179,7 +190,6 @@
         	<input class="topicOption" type="text" placeholder="Topic #2">
         	<button class="addTopic"> + Add Topic </button>
         </div>
-
         <div class="group">
           <input class="inputMaterial" id="groupingName" type="text" required>
           <label>Name of Grouping</label>
@@ -193,30 +203,32 @@
       </form>
       <div>
         <button class="generateGroups_btn">Generate Groups</button>
-      </div>-->
+      </div>
+      </div>
+      </div>
 
-	<div class="groupCreater_input_display" id="">
-	    <div class="form_inputs_container formInputsContainer_StudentsPick">
-	      	<form action="" method="post">
-		        <div class="group">
-		          	<input class="inputMaterial" id="groupingName" type="text" required>
-		          	<label>Name of Grouping</label>
-		        </div>
-		        <div class="group">
-		          	<input class="inputMaterial groupSize_options" id="groupSize" type="number" required>
-		          	<label>Group Size</label>
-		          	<p class="groupSize_options"> or <a href="#"> Size Range </a> </p>
-		        </div>
+	<div class="groupCreater_input_display" id="by_students_pick">
+		<div class="form_inputs_container formInputsContainer_StudentsPick">
+			<form action="" method="post">
+				<div class="group">
+					<input class="inputMaterial" id="groupingName" type="text" required>
+					<label>Name of Grouping</label>
+				</div>
+				<div class="group">
+					<input class="inputMaterial groupSize_options" id="groupSize" type="number" required>
+					<label>Group Size</label>
+					<p class="groupSize_options"> or <a href="#"> Size Range </a> </p>
+				</div>
 		        <!--<div class="group">
 		          <input class="inputMaterial" id="maxGroupNumber" type="number" required>
 		          <label>Maximum Number of Groups</label>
 		        </div>-->
-		    </form>
-	    	<div>
-	    		<button class="generateGroups_btn">Generate Groups</button>
-	    	</div>
-	    </div>
+			</form>
+			<div>
+				<button class="generateGroups_btn">Generate Groups</button>
+			</div>
+		</div>
 	</div>
-
+</div>
 </body>
 <!---OLD first div for each component <div class="component-picker component-picker--activity"><div class="component-picker__btn js-select component-picker__btn--active" data-identifier="multiple-choice" style="flex-basis: 50%;">-->
