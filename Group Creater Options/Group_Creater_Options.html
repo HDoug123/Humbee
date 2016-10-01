@@ -4,13 +4,13 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="Style_Group_Creater_Options.css">
 
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   
   	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+  	<script src="Group_Creater_Options.js"></script>
 
 </head>
 
@@ -28,7 +28,7 @@
 
 <div class="groupCreater_container span_600">
 
-	<div class="groupCreater_navbar_container flex_center">
+	<div data-tab-ID="1" class="groupCreater_navbar_container flex_center">
 		  	<div class="groupCreater_option_btn active">
 		        <div class="groupCreaterOption_icon_container">
 					<svg viewBox="0 0 256 256" width="45" height="45">
@@ -86,7 +86,6 @@
 					<svg viewBox="0 0 256 256" width="45" height="45" >
 					  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
 					    <g>
-					      <title>Layer 1</title>
 					      <text transform="translate(-5.488095 89.9019)" fill="black">
 					        <tspan font-family="FontAwesome" font-size="160.18443" font-weight="500" x="47.675006" y="137" textLength="171.62618"></tspan>
 					      </text>
@@ -196,7 +195,7 @@
         <button class="generateGroups_btn">Generate Groups</button>
       </div>-->
 
-	<div class="groupCreater_input_display">
+	<div class="groupCreater_input_display" id="">
 	    <div class="form_inputs_container formInputsContainer_StudentsPick">
 	      	<form action="" method="post">
 		        <div class="group">
