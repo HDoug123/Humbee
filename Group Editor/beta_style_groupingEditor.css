@@ -1,0 +1,498 @@
+/*----Basic----*/
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.background-pg {
+    padding: 20px;
+    background-color: red;
+    height: 100%;
+    position: relative;
+}
+
+
+/*----Grouping Top Bar----*/
+
+.page-container {
+    height: 100%;
+    position: relative;
+}
+
+
+/*----Grouping Top Bar----*/
+
+.ge-top-container {
+    background-color: #F4F4F4;
+    color: #000000;
+    width: 100%;
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    float: left;
+}
+
+
+/*----Grouping MAIN Content----*/
+
+.ge-main-content {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*-- Grouping Editor Toolbar (left side)---*/
+
+    .ge-toolbar {
+        background-color: #F4F4F4;
+        height: 100%;
+        width: calc(5/16 * 100%);
+        float: left;
+        /*min-width: 300px;*/
+        box-sizing: border-box;
+        overflow: scroll;
+    }
+
+    .ge-toolbar > div {
+        margin-left: 10px;
+    }
+
+
+
+    /*----Grouping Editor Buttons----*/
+
+        .ge-name-container {
+            margin: 10px;
+            border: 1px solid #666666;
+            background-color: white;
+            width: 90%;
+            border-radius: 5px;
+        }
+
+        .ge-name {
+            padding: .4rem;
+            border: 1px solid transparent;
+            width: 100%;
+        }
+
+        .ge-name input {
+            padding: .2rem;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .bm-border {
+            border-bottom: 1px dashed #1991D0;
+        }
+
+        .ge-about {
+            padding: .4rem;
+            border: 1px solid transparent;
+            width: 100%;
+        }
+
+        .ge-about input {
+            padding: .2rem;
+            font-size: 12px;
+            color: #000000;
+            /*Maybe switch to a dark gray*/
+        }
+
+        .ge-input {
+            border-width: 0;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .ge-input:focus {
+            background-color: #F2F2F2;
+        }
+
+
+        /*-----Date Container-----*/
+
+        .ge-date-container {
+            margin: 10px;
+            border: 1px solid #666666;
+            background-color: white;
+            width: 90%;
+            border-radius: 5px;
+            position: relative;
+            padding: 5px;
+        }
+
+        .icon-input {
+            display: inline;
+            left: 5px;
+            top: 3px;
+        }
+
+        .cal-input {
+            display: inline;
+            box-sizing: border-box;
+            margin-left: 0px;
+            font-size: 12px;
+            border-width: 0;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            width: 90%;
+        }
+
+        .cal-input:focus {
+            background-color: #F2F2F2;
+        }
+
+
+        /*-----Rearrange Instructions----*/
+
+        .tool-section {
+            font-size: 12px;
+            color: #000000;
+            margin-top: 16px;
+            margin-bottom: 12px;
+        }
+
+        .tool-header {
+            font-weight: bold;
+            color: #000000;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+
+        .tool-text {
+            font-weight: 400px;
+            color: #666666;
+            line-height: 18px;
+        }
+
+
+        /* Publish Date------------------*/
+
+        .toggle-btn-wrapper {
+            border: 1px solid #666666;
+            border-radius: 5px;
+            background-color: #999999;
+            margin-right: 20px;
+        }
+
+        .toggle-btn {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: .1px;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 16px;
+            padding: .2rem .4rem;
+            margin: 0;
+            height: auto;
+            border: 0px solid transparent;
+            border-radius: 5px;
+            vertical-align: middle;
+            -webkit-appearance: none;
+            color: #FFFFFF;
+            background-color: #999999;
+            width: 50%;
+        }
+
+        .toggle-btn-active {
+            color: #000000;
+            background-color: #FFFFFF;
+            font-weight: 400;
+        }
+
+        .toggle-btn:hover {
+            outline: none;
+            text-decoration: none;
+            box-shadow: inset 0 0 0 20rem rgba(255, 255, 255, .125);
+        }
+
+        .toggle-btn:focus {
+            outline: none;
+            /*box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, .075);*/
+        }
+
+
+        /*.toggle-btn:disabled,
+            .toggle-btn.is-disabled {
+              opacity: .5;
+            }*/
+
+
+/*------New Grouping Display------*/
+
+
+/*---Flexbox used for single grouping, but not for grouping---*/
+
+.ge-workspace-container {
+    height: 100%;
+    float: left;
+    width: calc(11/16 * 100%);
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.ge-workspace {
+    font-size: 14px;
+}
+
+.grouping-container {
+    font-size: 14px;
+}
+
+div.grouping {
+    background-color: #FFFFFF;
+    float: left;
+    box-sizing: border-box;
+}
+
+div.group {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: .5rem;
+    margin: 1rem;
+    margin-right: 26px;
+    background-color: #FAFAFA;
+    border: .5px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+div.group-member {
+    padding: .5rem;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: .5px;
+    border-color: #000000;
+    margin: .5rem .5rem 0 .5rem;
+    flex-basis: content;
+}
+
+.group-member:last-child {
+    margin-bottom: .5rem;
+}
+
+
+/*------New Grouping Display FLEXBOX ------*/
+
+
+/*.ge-workspace-container{
+  height: 100%;
+  float:left;
+  width: calc(11/16 * 100%);
+  box-sizing: border-box;
+}
+  .ge-workspace {
+    font-size: 14px;
+  }
+
+  div.grouping {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+  }
+
+  div.group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: .5rem;
+    border-color: #000000;
+    border-width: .5px;
+    border-style: solid;
+    margin: 1rem;
+    background-color: #FAFAFA;
+  }
+
+  div.group-member {
+    padding: .5rem;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: .5px;
+    border-color: #000000;
+    margin: .5rem .5rem 0 .5rem;
+  }
+
+  .group-member:last-child {
+    margin-bottom: .5rem;
+  }*/
+
+
+/*------Group Editor Submit/Publish Buttons----*/
+
+.ge-bottom-container {
+    background-color: #F4F4F4;
+    border-top: 2px solid #1991D0;
+    /*float: left;*/
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.ge-bottom-container > div {
+    display: inline-block;
+    float: right
+}
+
+
+/*-------Button-----*/
+
+:root {
+    --button-font-family: inherit;
+    --button-font-size: inherit;
+    --button-font-weight: var(--bold-font-weight, bold);
+    --button-line-height: 1.125rem;
+    --button-padding-y: .5rem;
+    --button-padding-x: 1rem;
+}
+
+
+/*------Button Primary-----*/
+
+.btn-primary {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+.btn-primary:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2);
+}
+
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+    opacity: .5;
+}
+
+:root {
+    --button-color: black;
+    --button-background-color: silver;
+}
+
+
+/*----Button Secondary----*/
+
+.btn-outline,
+.btn-outline:hover {
+    border-color: currentcolor;
+}
+
+.btn-outline {
+    border-radius: var(--border-radius);
+}
+
+.btn-outline:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+.btn-outline:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2);
+}
+
+.btn-outline:disabled,
+.btn-outline.is-disabled {
+    opacity: .5;
+}
+
+
+/*OTHER*/
+
+.nav-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+.nav-item {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+.main-header {
+    background-color: #AD1457;
+    color: #FAFAFA;
+}
+
+
+/*----COLOR----*/
+
+.b-white {
+    background-color: #FFFFFF;
+}
+
+.b-darkpink {
+    background-color: #AD1457;
+    color: #FAFAFA;
+}
+
+.b-gray1 {
+    background-color: #FAFAFA;
+}
+
+.b-gray2 {
+    background-color: #EEEEEE;
+}
+
+.b-gray3 {
+    background-color: #B0B0B0;
+}
+
+._nav-item {
+    list-style: none;
+    display: inline;
+}
+
+
