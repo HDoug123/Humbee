@@ -5,28 +5,26 @@
 
     <script src="https://use.fontawesome.com/c3ec8d21e4.js"></script>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="Bass.css">
-
+ 
     <link rel="stylesheet" type="text/css" href="beta_style_groupingEditor.css">
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <script src="GroupingEditor.js"></script>
 
 </head>
 
 <body>
-    <div class="page-container column">
-
-        <!-- Top Banner -->
+    <div class="page-container">
+        <!--Top Banner -->
         <div class="ge-top-container ">Edit Grouping</div>
 
-        <!--Grouping Editor Wrapper-->
-        <div class="ge-main-content">
+        <!--Grouping Editor Content Wrapper-->
+        <div class="ge-middle-wrapper">
 
             <!-- Grouping Editor Toolbar -->
             <div class="ge-toolbar">
-
                 <!-- Naming Box -->
                 <div class="ge-name-container">
                     <div class="ge-name bm-border">
@@ -42,19 +40,14 @@
                     <div class="tool-header">
                         Publish Groups
                     </div>
-                    <div>
-                        <div class="toggle-btn-wrapper">
-                            <button class="toggle-btn toggle-btn-active">Publish Now</button>
-                            <button class="toggle-btn">Pick a Date</button>
-                        </div>
+
+                    <!-- Date Input -->
+                    <div class="ge-date-container">
+                        <i class="icon-input fa fa-calendar" aria-hidden="true"></i>
+                        <input class="cal-input">
                     </div>
                 </div>
 
-                <!-- Date Input -->
-                <div class="ge-date-container">
-                    <i class="icon-input fa fa-calendar" aria-hidden="true"></i>
-                    <input class="cal-input">
-                </div>
 
                 <!-- Rearrange Group Members -->
                 <div class="tool-section">
@@ -82,36 +75,71 @@
                         <br>
                     </div>
                 </div>
-
             </div>
-
 
             <!--Grouping Editor Workspace-->
             <div class="ge-workspace-container">
-                <div class="ge-workspace b-white">
-                    <div class="grouping">
 
-                        <div class="group">
-                            <div class="group-member"> Group Member 1</div>
-                            <div class="group-member"> Group Member 2</div>
-                            <div class="group-member"> Group Member 3</div>
-                            <div class="group-member"> Group Member 4</div>
-                        </div>
-
-
-                    </div>
+                <!-- All the groups-->
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
                 </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <div class="group">
+                    <div class="group-member"> Group Member 1</div>
+                    <div class="group-member"> Group Member 2</div>
+                    <div class="group-member"> Group Member 3</div>
+                    <div class="group-member"> Group Member 4</div>
+                </div>
+                <!-- End of class groups-->
+
             </div>
 
         </div>
+        <!--closing for ge-content-wrapper-->
 
         <!--Group Editor Submit/Publish Buttons-->
         <div class="ge-bottom-container">
-            <div class=""><a href="/" class="cancel btn btn-secondary py2">Cancel</a></div>
-            <div class=""><a href="/" class="login btn btn-primary py2">Submit</a></div>
+            <div class=""><button class=" btn btn-sm btn-dark">Cancel
+                    </button></div>
+            <div class=""><button class="btn btn-dark">Submit
+                    </button></div>
         </div>
 
     </div>
+
 </body>
 
 </html>
